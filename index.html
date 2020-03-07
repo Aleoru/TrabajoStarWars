@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars</title>
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/javascript/java.js"></script>
+</head>
+<body onload="showSlides(1)"> <!-- Ejecuta el carousel de imagenes -->
+   <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Inicio</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Lados de la fuerza
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#jedi">Jedi</a>
+                    <a href="#sith">Sith</a>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Épocas 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#republica">República</a>
+                    <a href="#imperio">Imperio</a>
+                    <a href="#1orden">Primera orden</a>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Ejércitos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#clones">Clones</a>
+                      <a href="#droides">Droides</a>
+                      <a href="#imperial">Imperial</a>
+                      <a href="#1orden">Primera orden</a>
+                    </div>
+                  </div> 
+                <a href="#sobre">Sobre este sitio</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+              
+        </nav>
+       
+        <header>
+            <div class="texto-hero">
+              <h3>Bienvenido</h3>
+              <p>aquí hallarás los<br> conocimientos <br>sobre la fuerza</p>
+              <a href="#presentacion">Pasen y vean</a>
+            </div>
+        </header>       
+
+        <section id="presentacion">
+              <div class="embed-container">
+              <iframe width="" height="315" src="https://www.youtube.com/embed/cjeSDXgYNdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+         </section>
+        <section>
+            
+          <div class="row">
+            <div class="column" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/jedi.jpg);">
+              <h2>Jedi</h2>
+              <p>Defensores de la paz y personajes de gran poder y sabiduría, seguidores y prediacdores del Lado Luminoso de la Fuerza.</p>
+              <a href="#jedi">Saber más...</a>
+            </div>
+            <div class="column" style="background-image:url(imagenes/sith.jpg);">
+              <h2>Sith</h2>
+              <p>Miembros de un grupo de gran poder y maldad, conocidos por ser seguidores del Lado Oscuro de la Fuerza.</p>
+              <a href="#sith">Saber más...</a>
+            </div>
+          </div>
+
+        </section>
+      
+        <section>
+            <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="imagenes/cropped-1920-1080-673177.jpg" style="width:100%">
+            <div class="text">Sith y Jedi</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="imagenes/584816.jpg" style="width:100%">
+              <div class="text">Cena diplomática</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="imagenes/446469.png" style="width:100%">
+              <div class="text">Soldado república</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="imagenes/482335.jpeg" style="width:100%">
+              <div class="text">Soldado imperial</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="imagenes/cropped-1920-1080-698599.jpg" style="width:100%">
+              <div class="text">Soldado primera orden</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="imagenes/210141.jpg" style="width:100%">
+              <div class="text">Droides</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </section>
+        <footer>
+          <div class="mitad" id="izq">
+             <h3>Contacto</h3>
+             <ul>
+                <li><a href="#">Nombre: Alejandra Oropeza</a></li> 
+                <li><a href="#">Dirección: C/ La called de mi casa, 5</a></li>
+             </ul>
+          </div>
+          <div class="mitad">
+              <h3>RRSS:</h3>
+             <ul>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>@Twitter</a></li> 
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Alejandra Oropeza</a></li> 
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> @Instagram</a></li>  
+                <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> aleoru0022@gmail.com</a></li> 
+                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +34 666666666</a></li> 
+             </ul>
+          </div>
+          <!-- aquí va un bloque vacio sólo para indicar que acaba el apilamiento a la izquierda -->
+          <div id="final"></div>
+      </footer>
+   </div>
+</body>
+</html>
